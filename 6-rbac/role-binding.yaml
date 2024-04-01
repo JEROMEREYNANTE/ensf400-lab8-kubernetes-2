@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: div-get-pods
+subjects:
+- kind: ServiceAccount
+  name: div
+roleRef:
+  kind: Role
+  name: get-pods
+  apiGroup: rbac.authorization.k8s.io

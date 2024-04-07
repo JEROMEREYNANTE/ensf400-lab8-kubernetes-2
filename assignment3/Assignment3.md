@@ -1,4 +1,4 @@
-# Procedure for Assignment 1
+# Procedure for Assignment 3
 1. Requires Minikube for Codespaces. Install First
 2. After Setting up Minikube, run command Minikube Start
 3. Install ingress addon with the command "minikuber addons enable ingress"

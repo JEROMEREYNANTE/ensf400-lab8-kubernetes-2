@@ -16,4 +16,4 @@ spec:
       - name: app-2
         image: ghcr.io/denoslab/ensf400-sample-app:v2
         ports:
-        - containerPort: 3000
+        - containerPort: 8080

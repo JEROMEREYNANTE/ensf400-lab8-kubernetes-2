@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
   name: app-1-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/canary: "false"
   labels:
     app: app-1
 spec:
   rules:
   - http:
       paths:
-      - path: /app
+      - path: /
         pathType: Prefix
         backend:
           service:

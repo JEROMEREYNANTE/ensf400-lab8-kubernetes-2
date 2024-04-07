@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/canary: "false"
 
 spec:
   rules:

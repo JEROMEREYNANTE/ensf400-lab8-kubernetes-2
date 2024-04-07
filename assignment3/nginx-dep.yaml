@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-dep
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: nginx
@@ -16,12 +16,12 @@ spec:
       - name: nginx
         image: nginx:1.14.2
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         volumeMounts:
-        - name: nginx-config-volume
-          mountPath: /etc/nginx/nginx.cfg
+        - name: nginx-volume
+          mountPath: /etc/nginx/conf.d
       volumes:
-      - name: nginx-config-volume
+      - name: nginx-volume
         configMap:
           name: nginx-configmap
 

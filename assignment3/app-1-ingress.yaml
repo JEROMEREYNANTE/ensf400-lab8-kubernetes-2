@@ -3,9 +3,7 @@ kind: Ingress
 metadata:
   name: app-1-ingress
   annotations:
-    nginx.ingress.kubernetes.io/canary: "false"
-  labels:
-    app: app-1
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:

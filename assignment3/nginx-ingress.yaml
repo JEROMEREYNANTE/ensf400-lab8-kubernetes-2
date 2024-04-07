@@ -4,8 +4,7 @@ metadata:
   name: nginx-ingress
   labels:
     app: nginx
-  annotations:
-    nginx.ingress.kubernetes.io/canary: "false"
+
 
 spec:
   rules:
@@ -17,4 +16,4 @@ spec:
           service:
             name: nginx-svc
             port:
-              number: 8080
+              number: 80

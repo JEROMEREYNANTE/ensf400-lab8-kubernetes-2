@@ -10,7 +10,7 @@ data:
     }
 
     server {
-        listen 8080;
+        listen: 8080;
         location / {
             proxy_pass http://backend;
         }

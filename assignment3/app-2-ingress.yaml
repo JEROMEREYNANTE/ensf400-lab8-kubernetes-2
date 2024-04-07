@@ -5,6 +5,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/canary-weight: "30"
     nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /
   labels:
     app: app-2
 spec:
